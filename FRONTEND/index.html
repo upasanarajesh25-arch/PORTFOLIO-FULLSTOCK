@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upasana Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">Upasana<span>.</span></h2>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#admin">Admin</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Upasana</span> 👩‍💻</h1>
+      <p>
+        A passionate <b>Full Stack Developer</b> & Student who loves building
+        modern, responsive websites and real-time applications.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+        <a href="./resume.pdf" class="btn resume" download>Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-img" />
+      <h3>✨ Quick Info</h3>
+      <p><b>Role:</b> Full Stack Developer</p>
+      <p><b>Tech:</b> Node.js, MongoDB</p>
+      <p><b>Passion:</b> Web Development</p>
+      <p><b>Location:</b> India 🇮🇳</p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section fade-in">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">A short introduction about me.</p>
+
+    <div class="about-box">
+      <p>
+        Hi! I'm <b>Upasana</b>, a student and aspiring Full Stack Developer.
+        I enjoy creating responsive websites, connecting frontend and backend,
+        and building applications that solve real problems.
+      </p>
+
+      <p>
+        I love learning new technologies and improving my skills daily.
+        My dream is to become a professional software developer and work on meaningful projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section fade-in">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Technologies I work with.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Express.js</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">GitHub</div>
+      <div class="skill-card">API Integration</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section fade-in">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Projects stored dynamically from MongoDB.</p>
+
+    <div id="projectList" class="project-grid">
+      <p class="loading">Loading projects...</p>
+    </div>
+  </section>
+
+  <!-- ADMIN FORM -->
+  <section id="admin" class="section fade-in">
+    <h2 class="section-title">Admin Panel</h2>
+    <p class="section-subtitle">Add new project directly from website.</p>
+
+    <div class="admin-form">
+      <input type="text" id="title" placeholder="Project Title" required />
+      <textarea id="description" placeholder="Project Description" required></textarea>
+      <input type="text" id="techStack" placeholder="Tech Stack (HTML, CSS, JS)" required />
+      <input type="text" id="githubLink" placeholder="GitHub Link" required />
+      <input type="text" id="liveLink" placeholder="Live Link (optional)" />
+
+      <button onclick="addProject()">Add Project</button>
+
+      <p id="message"></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section fade-in">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Let’s connect anytime!</p>
+
+    <div class="contact-card">
+      <p><b>Email:</b> upasana@gmail.com</p>
+      <p><b>LinkedIn:</b> <a href="#" target="_blank">linkedin.com/in/upasana</a></p>
+      <p><b>GitHub:</b> <a href="#" target="_blank">github.com/upasana</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Upasana | Full Stack Portfolio Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
