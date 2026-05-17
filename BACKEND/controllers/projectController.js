@@ -1,4 +1,4 @@
-const Project = require("../models/Project");
+const Project = require("../models1/Project");
 
 // GET all projects
 exports.getProjects = async (req, res) => {

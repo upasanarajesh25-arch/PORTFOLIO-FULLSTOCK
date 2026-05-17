@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Import Routes
-const projectRoutes = require("./routes/projectRoutes");
+const projectRoutes = require("./routes1/projectRoutes");
 
 // Routes Middleware
 app.use("/api/projects", projectRoutes);
